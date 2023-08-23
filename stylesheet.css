@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: #D5EBDA;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 40%;
+    height: 50vh;
+    background-color: #85ffbd;
+    background: rgb(254, 239, 126);
+    background: linear-gradient(0deg, rgba(254, 239, 126, 1) 0%, rgba(255, 127, 127, 0.8239670868347339) 100%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+#joke {
+    width: 320px;
+    height: 200px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: transform 0.5s;
+}
+
+button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #343a40;
+    box-shadow: 0 5px #212529;
+    font-size: large;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    padding: 25px 25px 22px 25px;
+}
+
+button:hover {
+    box-shadow: 0 3px #212529;
+    top: 1px;
+}
+
+button:active {
+    box-shadow: 0 0 #212529;
+    top: 10px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+
+    #joke {
+        font-size: medium;
+    }
+  }
